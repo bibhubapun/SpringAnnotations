@@ -24,4 +24,9 @@ public class ApplicationConfig {
     public BeanLifecycleDemoBean getLifecycle(){
         return new BeanLifecycleDemoBean();
     }
+
+    @Bean
+    public BeanPostProcessorDemoBean getPostProcess(){
+        return new BeanPostProcessorDemoBean();
+    }
 }
