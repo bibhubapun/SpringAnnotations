@@ -2,6 +2,7 @@ package com.stackroute;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class ApplicationConfig {
@@ -15,6 +16,7 @@ public class ApplicationConfig {
 //    }
 
     @Bean
+    @Scope("prototype")
     public Movie getMovie(){
         Actor actor= new Actor();
         actor.setAge(30);

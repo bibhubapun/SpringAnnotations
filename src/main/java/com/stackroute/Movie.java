@@ -1,6 +1,5 @@
 package com.stackroute;
 
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class Movie {
     private Actor actor;
