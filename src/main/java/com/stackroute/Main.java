@@ -12,6 +12,5 @@ public class Main
 
         Movie movieB=context.getBean(Movie.class);
 
-        System.out.println(movieA==movieB);
     }
 }

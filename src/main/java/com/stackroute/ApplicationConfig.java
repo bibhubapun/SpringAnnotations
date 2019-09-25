@@ -6,23 +6,17 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class ApplicationConfig {
-//    @Bean
-//    public Actor getActor(){
-//        Actor actor= new Actor();
-//        actor.setAge(30);
-//        actor.setName("Hrithik");
-//        actor.setGender("male");
-//        return actor;
-//    }
-
     @Bean
-    @Scope("prototype")
-    public Movie getMovie(){
+    public Actor getActor(){
         Actor actor= new Actor();
         actor.setAge(30);
         actor.setName("Hrithik");
         actor.setGender("male");
-        Movie movie=new Movie(actor);
-        return movie;
+        return actor;
+    }
+
+    @Bean
+    public Movie getMovie(){
+        return new Movie();
     }
 }
