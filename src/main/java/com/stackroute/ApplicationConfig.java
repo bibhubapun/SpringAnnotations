@@ -19,4 +19,9 @@ public class ApplicationConfig {
     public Movie getMovie(){
         return new Movie();
     }
+
+    @Bean
+    public BeanLifecycleDemoBean getLifecycle(){
+        return new BeanLifecycleDemoBean();
+    }
 }
