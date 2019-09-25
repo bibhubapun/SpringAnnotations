@@ -20,8 +20,7 @@ public class ApplicationConfig {
         actor.setAge(30);
         actor.setName("Hrithik");
         actor.setGender("male");
-        Movie movie=new Movie();
-        movie.setActor(actor);
+        Movie movie=new Movie(actor);
         return movie;
     }
 }
