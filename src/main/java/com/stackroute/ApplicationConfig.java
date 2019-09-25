@@ -5,17 +5,23 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ApplicationConfig {
+//    @Bean
+//    public Actor getActor(){
+//        Actor actor= new Actor();
+//        actor.setAge(30);
+//        actor.setName("Hrithik");
+//        actor.setGender("male");
+//        return actor;
+//    }
+
     @Bean
-    public Actor getActor(){
+    public Movie getMovie(){
         Actor actor= new Actor();
         actor.setAge(30);
         actor.setName("Hrithik");
         actor.setGender("male");
-        return actor;
-    }
-
-    @Bean
-    public Movie getMovie(){
-        return new Movie();
+        Movie movie=new Movie();
+        movie.setActor(actor);
+        return movie;
     }
 }

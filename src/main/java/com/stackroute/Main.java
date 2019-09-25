@@ -1,5 +1,6 @@
 package com.stackroute;
 
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -10,5 +11,7 @@ public class Main
         ApplicationContext context= new AnnotationConfigApplicationContext(ApplicationConfig.class);
         Movie movie=context.getBean(Movie.class);
         movie.display();
+
+        
     }
 }
